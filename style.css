@@ -653,3 +653,61 @@ img {
     font-size: 1.5rem;
   }
 }
+
+/* ============================================================
+   Central UI additions
+   ============================================================ */
+
+.nav-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.4rem;
+}
+
+.main-nav a.active {
+  font-weight: 700;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  margin: 1rem 0;
+  font-size: 0.92rem;
+}
+
+.breadcrumb-separator {
+  opacity: 0.6;
+}
+
+[data-ad-slot] {
+  width: 100%;
+  min-height: 0;
+  margin: 1rem 0;
+}
+
+@media (max-width: 760px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    width: 100%;
+  }
+
+  .main-nav.nav-open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-inner {
+    position: relative;
+    flex-wrap: wrap;
+  }
+}
+
